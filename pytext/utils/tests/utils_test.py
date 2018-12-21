@@ -20,6 +20,12 @@ def get_test_sample():
     return data
 
 
+def get_test_sampleTTTT():
+    with open(RAW_TEST_PATH, "r") as f:
+        data = json.load(f)
+    return data
+
+
 class UtilTest(unittest.TestCase):
     def test_merge_token_labels_to_slot(self):
         data = get_test_sample()
